@@ -5,7 +5,7 @@ const WhatsHot = () => {
   const[hots, setHots] = useState([])
 
   const fetchHot = async()=>{
-    const res = await fetch("../public/HomePageData/what'sHot.json")
+    const res = await fetch("/HomePageData/what'sHot.json")
     const data = await res.json()
     // console.log("what's hot line 9", data)
     setHots(data)

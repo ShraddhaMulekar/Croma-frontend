@@ -9,7 +9,7 @@ const CardCarousel = () => {
   const [cards, setCards] = useState([]);
 
   const fetchCards = async () => {
-    let res = await fetch("../public/HomePageData/card-carosel.json");
+    let res = await fetch("/HomePageData/card-carosel.json");
     let data = await res.json();
     // console.log("card carousel line 9", data);
     setCards(data);

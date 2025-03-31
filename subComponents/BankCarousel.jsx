@@ -5,7 +5,7 @@ const BankCarousel = () => {
     const [banks, setBanks] = useState([])
 
     const fetchBanks = async()=>{
-        const res = await fetch ("../public/HomePageData/Bank-carosel.json")
+        const res = await fetch ("/HomePageData/Bank-carosel.json")
         const data = await res.json()
         // console.log("bank carousel data line 9", data)
         setBanks(data)

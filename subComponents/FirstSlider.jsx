@@ -8,7 +8,7 @@ const FirstSlider = () => {
   const [carousel, setCarousel] = useState([]);
 
   const fetchCarousel = async () => {
-    let res = await fetch("../public/HomePageData/carosel.json");
+    let res = await fetch("/HomePageData/carosel.json");
     let data = await res.json();
     // console.log("first set data line 14", data);
     setCarousel(data);
