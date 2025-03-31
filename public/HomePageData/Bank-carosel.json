@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1721197736/Croma%20Assets/CMS/Homepage%20Banners/neu_offers_desk_tkq4lf.png?tr=w-720",
+        "alt" : "neu"
+    },
+    {
+        "id" : 2,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717075769/Croma%20Assets/CMS/LP%20Page%20Banners/2024/BAU/HP_2Split_MFYMP_Brands_HDFC_ICIC_30May2024_kzbaou.png?tr=w-720",
+        "alt" : "hdfc"
+    },
+    {
+        "id" : 3,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1728297131/Croma%20Assets/CMS/LP%20Page%20Banners/2024/More%20For%20Your%20Money/October/BAU/Tue%20-%20BOB/HP_2Split_MFYMP_1500_30July2024_sxfs6y.png?tr=w-720",
+        "alt" : "july"
+    },
+    {
+        "id" : 4,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1728297131/Croma%20Assets/CMS/LP%20Page%20Banners/2024/More%20For%20Your%20Money/October/BAU/Tue%20-%20BOB/HP_2Split_MFYMP_Tue-BOB2_28June2024_nx4jqe.png?tr=w-720",
+        "alt" : "june"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742446534/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Sanity/HP/March/20032025/HP_Whats_Hot_Pixel_20March2025_pl2zav.jpg?tr=w-720",
+        "alt" : "hp"
+    },
+    {
+        "id" : 2,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742395336/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Whats%20Hot/March/20032025/Desktop/HP_Whats_Hot_ACs_20March2025_y3e7bp.jpg?tr=w-720",
+        "alt" : "ac"
+    },
+    {
+        "id" : 3,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742395339/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Whats%20Hot/March/20032025/Desktop/HP_Whats_Hot_MB_20March2025_obhhbp.jpg?tr=w-720",
+        "alt" : "mb"
+    },
+    {
+        "id" : 4,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742395338/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Whats%20Hot/March/20032025/Desktop/HP_Whats_Hot_SonyPS5_20March2025_caz1v5.jpg?tr=w-720",
+        "alt" : "sony"
+    }
+]

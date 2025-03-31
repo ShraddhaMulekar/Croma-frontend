@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "image" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1739976850/Croma%20Assets/CMS/LP%20Page%20Banners/2025/campaigns/Summer%20Campaign/HP%20Rotating/19022025/HP_Rotating_SC_19Feb2025_uf8bkt.jpg",
+        "alt" : "img1"
+    },
+    {
+        "id" : 2,
+        "image" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742275668/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Sanity/HP/March/18032025/HP_Rotating_Vivo_18March2025_ghhg0a.jpg",
+        "alt" : "img2"
+    },
+    {
+        "id" : 3,
+        "image" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742275667/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Sanity/HP/March/18032025/HP_Rotating_AC_18March2025_eo7ns7.jpg",
+        "alt" : "img3"
+    },
+    {
+        "id" : 4,
+        "image" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742275667/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Sanity/HP/March/18032025/HP_Rotating_TV_18March2025_pcryka.jpg",
+        "alt" : "img4"
+    },
+    {
+        "id" : 5,
+        "image" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742206986/Croma%20Assets/CMS/LP%20Page%20Banners/2025/HP%20Rotating%20Banners/March/18032025/desktop/HP_Rotating_ref_18March2025_ba1c4l.jpg",
+        "alt" : "img5"
+    },
+    {
+        "id" : 6,
+        "image" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742275668/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Sanity/HP/March/18032025/HP_Rotating_WP_18March2025_bnjtoh.jpg",
+        "src" : "img6"
+    },
+    {
+        "id" : 7,
+        "image" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742275667/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Sanity/HP/March/18032025/HP_Rotating_PS5_18March2025_e7lsuw.jpg",
+        "src" : "img7"
+    }
+]

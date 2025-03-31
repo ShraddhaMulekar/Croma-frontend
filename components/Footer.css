@@ -1,0 +1,139 @@
+.footer-conatainer {
+  /* border: solid seagreen; */
+  width: 100%;
+  background: #171616;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px 100px;
+  /* margin: 2px 0; */
+}
+.head-footer {
+  width: 30%;
+  /* border: solid; */
+  padding: 10px;
+}
+.footer-conatainer label {
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.input-arrow-head-footer {
+  width: 250px;
+  height: 46px;
+  display: flex;
+  margin-top: 20px;
+  /* border: solid; */
+}
+.input-head-footer {
+  width: 1000px;
+  height: 100%;
+  background: white;
+  border-radius: 5px;
+  border: 1px gray solid;
+  padding: 5px;
+}
+.input-arrow-head-footer span {
+  color: black;
+  margin: 10px 0 0 -52px;
+  font-size: 29px;
+}
+.logo-head-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-size: 25px;
+  /* border: solid; */
+  padding-top: 45px;
+}
+.head-footer p {
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.body-footer {
+  width: 30%;
+}
+.foot-footer {
+  width: 30%;
+}
+.body-footer-content {
+  /* border: solid yellow; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-content: start;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 5px;
+  font-size: 15px;
+  padding-top: 15px;
+}
+.body-footer-content div p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-weight: 700;
+}
+hr {
+  color: rgb(169, 163, 163);
+  height: 350px;
+  width: 1px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  body {
+    width: auto;
+  }
+  .footer-conatainer {
+    flex-direction: column;
+    padding: 10px 50px;
+  }
+  .head-footer{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .input-arrow-head-footer{
+    width: auto;
+    margin-left: 50px;
+  }
+  .input-arrow-head-footer span{
+    margin-left: -180px;
+  }
+  hr{
+    height: 1px;
+    width: 100%;
+    margin: 30px;
+  }
+  .body-footer{
+    width: 100%;
+    text-align: center;
+  }
+  .foot-footer{
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    width: auto;
+  }
+  .input-head-footer{
+    width:250px;
+    margin: 0;
+  }
+  .input-arrow-head-footer span{
+    margin-left: -100px;
+  }
+  .footer-conatainer{
+    padding-left: 50px;
+  }
+}

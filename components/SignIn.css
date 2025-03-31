@@ -1,0 +1,93 @@
+.signIn_head_container{
+    width: 100%;
+    height: auto;
+    /* margin: 4% 35%; */
+    /* border: solid rgb(128, 9, 0); */
+    background: rgb(46, 45, 45);
+    color: white;
+    padding: 40px;
+}
+.signIn_container{
+    /* border: solid green; */
+    width: 35%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: start;
+    box-shadow: rgba(197, 197, 199, 0.25) 0px 2px 5px -1px, rgba(230, 228, 228, 0.3) 0px 1px 3px -1px;
+    padding: 30px 15px;
+    border-radius: 15px;
+}
+.signIn_container h2{
+    width: auto;
+    border: 1px solid rgb(75, 171, 85);
+    border-radius: 11px;
+    text-align: center;
+    margin: 40px 0;
+    padding: 10px;
+    background-color: rgb(75, 171, 85);
+    color: white;
+}
+.signIn_container h2:hover{
+    color: rgb(19, 143, 31);
+    background-color: white;
+}
+.signIn_content{
+    width: 100%;
+    /* border: solid salmon; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.signIn_content input{
+    margin: 12px 40px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: medium;
+    text-decoration: none;
+    border: none;
+}
+.signIn_button{
+    width: auto;
+    background-color: #4b8e4b;
+    color: white;
+    padding: 9px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.signIn_button:hover{
+    border: 1px solid #4b8e4b;
+    color: #4b8e4b;
+    background-color: white;
+    font-weight:900;
+    cursor: pointer;
+}
+.signIn_line{
+    border: 1px solid #618961 ;
+    border-radius: 100px;
+    width: 70%;
+    height: 1px;
+    margin-top: 50px;
+}
+.signIn_member{
+    font-size: 18px;
+    padding: 30px;
+    text-align: center;
+}
+.signIn_login{
+    text-decoration: none;
+    color: #4b8e4b;
+}
+.signIn_login:hover{
+    color: #68f468;
+}
+.goToHome{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}

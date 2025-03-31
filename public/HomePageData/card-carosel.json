@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746332/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Mobile_sdtrdf.png?tr=w-480",
+    "alt": "Mobile"
+  },
+  {
+    "id": 2,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746346/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/TV_vdemgc.png?tr=w-480",
+    "alt": "TV"
+  },
+  {
+    "id": 3,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746308/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Air_Conditioner_a4hg1z.png?tr=w-480",
+    "alt": "AC"
+  },
+  {
+    "id": 4,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1739259222/Croma%20Assets/CMS/LP%20Page%20Banners/2025/LP_Cooler_ak2tjf.png?tr=w-480",
+    "alt": "cooler"
+  },
+  {
+    "id": 5,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746331/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Laptops_pzewpv.png?tr=w-480",
+    "alt": "laptop"
+  },
+  {
+    "id": 6,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746312/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Head_set_xjj934.png?tr=w-480",
+    "alt": "headset"
+  },
+  {
+    "id": 7,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746309/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Fans_ecnoxj.png?tr=w-480",
+    "alt": "fan"
+  },
+  {
+    "id": 8,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746333/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Ref_biysg7.png?tr=w-480",
+    "alt": "ref"
+  },
+  {
+    "id": 9,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746308/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Accessories_kefony.png?tr=w-480",
+    "alt": "accessories"
+  },
+  {
+    "id": 10,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746346/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Washing_machines_izyrnd.png?tr=w-480",
+    "alt": "washing machine"
+  },
+  {
+    "id": 11,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746345/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Tablets_yzod4f.png?tr=w-480",
+    "alt": "tablets"
+  },
+  {
+    "id": 12,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1718616448/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/June/17th/Desktop/Wearables_iunu7h.png?tr=w-480",
+    "alt": "weareables"
+  },
+  {
+    "id": 13,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746312/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Kitchen_Appliances_yhzevo.png?tr=w-480",
+    "alt": "kichen appliances"
+  },
+  {
+    "id": 14,
+    "img": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1717746311/Croma%20Assets/CMS/LP%20Page%20Banners/2024/HP%20Category%20Ic0on/Homepage%20Cat%20Icons-Desktop/Home_theatres_kpwvft.png?tr=w-480",
+    "alt": "home theaters"
+  }
+]

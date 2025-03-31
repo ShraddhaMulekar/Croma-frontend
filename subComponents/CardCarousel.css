@@ -1,0 +1,23 @@
+
+.card-img{
+    /* width: 100px; */
+    padding: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      width: auto;
+    }
+    .card-img{
+      padding: 25px;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    body {
+      width: auto;
+    }
+    .card-img{
+      padding: 5px;
+    }
+  }

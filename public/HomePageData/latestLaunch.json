@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1741687976/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Our%20New%20Favourites/March/Nothing/11032025/SOH%202%20Split/HP_2Split_SOH_Nothing_11March2025_olznfr.png?tr=w-720",
+        "alt" : "nothing"
+    },
+    {
+        "id" : 2,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1741709371/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Our%20New%20Favourites/March/iPad/11032025/HP_2Split_SOH_Apple_ipad_11March2025_fbpdyp.png?tr=w-720",
+        "alt" : "ipad"
+    },
+    {
+        "id" : 3,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1742023406/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Our%20New%20Favourites/March/Mac%20Studio/HP_2Split_SOH_macstudio_15March2025_wyyzfz.png?tr=w-720",
+        "alt" : "mac"
+    },
+    {
+        "id" : 4,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1741846064/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Our%20New%20Favourites/March/Macbook%20Air/HP_2Split_SOH_MB_13March2025_p10n50.png?tr=w-720",
+        "alt" : "macbook"
+    },
+    {
+        "id" : 5,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1741778657/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Our%20New%20Favourites/March/Samsung%20banners/2%20split/HP_2Split_SOH_samsung_12March2025_e9efux.png?tr=w-720",
+        "alt" : "samsung"
+    },
+    {
+        "id" : 6,
+        "img" : "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1741246244/Croma%20Assets/CMS/LP%20Page%20Banners/2025/Our%20New%20Favourites/March/06032025/Desktop/HP_2Split_SOH_Asus_Samsung_2_6march2025_jslwvh.png?tr=w-720",
+        "alt" : "hp"
+    }
+]

@@ -1,0 +1,49 @@
+.bankCarousel-container {
+  width: 75%;
+  /* border: solid powderblue; */
+  margin: auto;
+  padding: 20px 0;
+}
+.bankCarousel-container h2 {
+  font-size: 25px;
+  font-weight: lighter;
+  padding-bottom: 15px;
+}
+.bank-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 15px 0;
+}
+.bank-carousel-div {
+  width: 49%;
+  height: 145px;
+}
+.bank-carousel-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  body {
+    width: auto;
+  }
+  .bankCarousel-container {
+    width: 80%;
+  }
+  .bank-carousel-div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    width: auto;
+  }
+}

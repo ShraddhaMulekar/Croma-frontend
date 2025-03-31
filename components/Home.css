@@ -1,0 +1,41 @@
+.home-container {
+  background: rgb(46, 45, 45);
+  padding: 10px 0;
+  color: white;
+  width: 100%;
+}
+.home-carousel {
+  /* border: solid green; */
+  width: 100%;
+  padding: 25px 40px;
+  margin-bottom: 15px;
+}
+.img-carousel {
+  width: 100%;
+}
+.card-carousel {
+  width: 75%;
+  /* border: solid palevioletred; */
+  margin: auto;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  body {
+    width: auto;
+  }
+  .card-carousel{
+    width: 95%;
+    padding: 20px;
+  }
+  .bankCarousel-container{
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    width: auto;
+  }
+}

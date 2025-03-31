@@ -1,0 +1,104 @@
+.buyNow-wrapper {
+  width: 100%;
+  background: rgb(46, 45, 45);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+.buy-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buyNow-container {
+  width: 600px;
+  height: 800px;
+  border-bottom: 1px solid rgb(97, 95, 95);
+  padding: 30px;
+}
+.buyNow-container img {
+  width: 400px;
+  height: 400px;
+  /* border: solid rebeccapurple; */
+  padding: 15px;
+}
+.buyNow-container h3 {
+  width: 500px;
+  font-size: 23px;
+  padding: 10px 0;
+}
+.buyNow-container p {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.buyNow-container label {
+  font-size: 20px;
+  font-weight: bold;
+}
+.buyNow-container input {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  margin-left: 21px;
+  font-size: 23px;
+  background: no-repeat;
+  color: white;
+}
+.buyNow-container button {
+  width: auto;
+  font-size: medium;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+  background: none;
+  color: white;
+}
+.buyNow_cancel_btn {
+  text-decoration: none;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+}
+.buyNow_btns {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  body {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  body {
+    width: auto;
+  }
+  .buyNow-wrapper {
+    padding: 30px 0;
+  }
+  .buyNow-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .buyNow-container img {
+    width: 100%;
+  }
+  .buyNow-container h3 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .buyNow-container p{
+    font-size: 18px;
+  }
+  .buyNow_btns{
+    width: 100%;
+  }
+}
