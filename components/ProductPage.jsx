@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { base_URL } from "../config/base.url";
+import { base_URL } from "../config/base.url.js";
 import "./ProductPage.css";
 import { useNavigate } from "react-router-dom";
 

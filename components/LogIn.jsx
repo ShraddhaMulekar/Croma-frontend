@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./SignIn.css";
 import { Link } from "react-router-dom";
-import { base_URL } from "../config/base.url";
+import { base_URL } from "../config/base.url.js";
 
 const LogIn = () => {
   const [email, setEmail] = useState("");

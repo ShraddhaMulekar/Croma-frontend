@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import "./ProductDetailPage.css";
-import { base_URL } from "../config/base.url";
+import { base_URL } from "../config/base.url.js";
 
 const ProductDetailPage = () => {
   const { id } = useParams();
