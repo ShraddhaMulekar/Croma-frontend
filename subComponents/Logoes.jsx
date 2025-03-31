@@ -8,7 +8,7 @@ const Logoes = () => {
     const [logoes, setLogo] = useState([]);
     
       const fetchLogo = async () => {
-        let res = await fetch("../public/HomePageData/Logoes.json");
+        let res = await fetch("/HomePageData/Logoes.json");
         let data = await res.json();
         // console.log("card carousel line 9", data);
         setLogo(data);
