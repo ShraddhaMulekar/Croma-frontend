@@ -14,7 +14,7 @@ const SignIn = () => {
       email,
       password,
     };
-    // console.log(payload, "14");
+    console.log(payload, "14");
     try {
       let res = await fetch(`${base_URL}/user/register`, {
         method: "POST",
@@ -24,7 +24,7 @@ const SignIn = () => {
         body: JSON.stringify(payload),
       });
       let data = await res.json();
-      //   console.log("data23:", data.msg);
+        console.log("data23:", data.msg);
       alert(data.msg);
       setName("");
       setEmail("");
