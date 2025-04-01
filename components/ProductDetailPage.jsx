@@ -10,7 +10,7 @@ const ProductDetailPage = () => {
 
   const fetchProductDetail = async () => {
     try {
-      const res = await fetch(`${base_URL}/product/${id}`);
+      const res = await fetch(`${base_URL}product/${id}`);
       const data = await res.json();
     //   console.log(data.product);
       setProducts(data.product);
@@ -22,14 +22,14 @@ const ProductDetailPage = () => {
   //add to cart
   const addToCart = async () => {
     const token = localStorage.getItem("token");
-    console.log("Token in addToCart:", token);
+    // console.log("Token in addToCart:", token);
 
     if (!token) {
         alert("Please log in first!");
         return;
     }
     try {
-      const res = await fetch(`${base_URL}/cart/addToCart`, {
+      const res = await fetch(`${base_URL}cart/addToCart`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const ProductDetailPage = () => {
       });
 
       const data = await res.json();
-      console.log(data)
+      // console.log(data)
       if (res.ok) {
         alert("Product added to cart!");
         navigate("/add_to_cart"); // Redirect to cart page

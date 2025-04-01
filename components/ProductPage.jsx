@@ -9,12 +9,12 @@ const ProductPage = () => {
 
   const productFetch = async () => {
     try {
-      const res = await fetch(`${base_URL}/product/display`);
+      const res = await fetch(`${base_URL}product/display`);
       const data = await res.json();
-      console.log(data.product);
+      // console.log(data.product);
       setProducts(data.product);
     } catch (error) {
-      // console.log("error in product fetch", error);
+      console.log("error in product fetch", error);
     }
   };
 

@@ -14,9 +14,9 @@ const SignIn = () => {
       email,
       password,
     };
-    console.log(payload, "14");
+    // console.log(payload, "14");
     try {
-      let res = await fetch(`${base_URL}/user/register`, {
+      let res = await fetch(`${base_URL}user/register`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -24,13 +24,13 @@ const SignIn = () => {
         body: JSON.stringify(payload),
       });
       let data = await res.json();
-        console.log("data23:", data.msg);
+        // console.log("data23:", data.msg);
       alert(data.msg);
       setName("");
       setEmail("");
       setPassword("");
     } catch (error) {
-      console.log(error, "error");
+      // console.log(error, "error");
       alert(error.msg);
     }
   };

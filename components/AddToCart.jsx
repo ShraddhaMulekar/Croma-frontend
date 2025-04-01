@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { base_URL } from "../config/base.url";
+import { base_URL } from "../config/base.url.js";
 import "./AddToCart.css";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const AddToCart = () => {
   const fetchCart = async () => {
     let token = localStorage.getItem("token");
     try {
-      const res = await fetch(`${base_URL}/cart`, {
+      const res = await fetch(`${base_URL}cart`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -17,7 +17,7 @@ const AddToCart = () => {
         },
       });
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       setCarts(data.cart || { items: [] });
       // Save cart length in localStorage
       localStorage.setItem("cartLength", data.cart?.items?.length || 0);
@@ -40,7 +40,7 @@ const AddToCart = () => {
     let token = localStorage.getItem("token");
 
     try {
-      const res = await fetch(`${base_URL}/cart/deletecart`, {
+      const res = await fetch(`${base_URL}cart/deletecart`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ const AddToCart = () => {
       });
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
 
       if (res.ok) {
         // Update the cart state by removing the deleted item

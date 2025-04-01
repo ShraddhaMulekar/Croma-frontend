@@ -12,9 +12,9 @@ const FilterProduct = () => {
       const category = queryParams.get("category");
 
       try {
-        let res = await fetch(`${base_URL}/product?category=${encodeURIComponent(category)}`);
+        let res = await fetch(`${base_URL}product?category=${encodeURIComponent(category)}`);
         let data = await res.json();
-        console.log(data)
+        // console.log(data)
         setProducts(data.products);
       } catch (error) {
         console.log("Error fetching products", error);

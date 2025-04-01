@@ -32,7 +32,7 @@ const Navbar = () => {
   // for handle menu bar
   const handleMenuBar = async () => {
     try {
-      let res = await fetch(`${base_URL}/product/display`);
+      let res = await fetch(`${base_URL}product/display`);
       let data = await res.json();
       // console.log(data.product);
 
@@ -42,7 +42,7 @@ const Navbar = () => {
         ];
         setCategories(uniqueCategory);
       } else {
-        console.log("unexpected response", data);
+        // console.log("unexpected response", data);
         setCategories([]);
       }
 
@@ -61,13 +61,13 @@ const Navbar = () => {
     setSearchInput(value);
 
     if (value.length > 1) {
-      console.log(value);
+      // console.log(value);
       try {
         let res = await fetch(
-          `${base_URL}/product?search=${encodeURIComponent(value)}`
+          `${base_URL}product?search=${encodeURIComponent(value)}`
         );
         let data = await res.json();
-        console.log(data);
+        // console.log(data);
 
         if (Array.isArray(data.fetchProduct) && data.fetchProduct.length > 0) {
           setSearchSuggestion(data.fetchProduct);
@@ -77,7 +77,7 @@ const Navbar = () => {
           setIsDropDownSearchInput(false);
         }
       } catch (error) {
-        console.log("error in fetching search result in frontend", error);
+        // console.log("error in fetching search result in frontend", error);
         setIsDropDownSearchInput(false);
       }
     } else {

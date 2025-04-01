@@ -10,7 +10,7 @@ const Orders = () => {
     const fetchOrders = async () => {
       const token = localStorage.getItem("token");
       try {
-        const res = await fetch(`${base_URL}/order`, {
+        const res = await fetch(`${base_URL}order`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -18,7 +18,7 @@ const Orders = () => {
           },
         });
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         if (data.order && Array.isArray(data.order)) {
           setOrders(data.order);
         } else {

@@ -12,9 +12,9 @@ const LogIn = () => {
       email,
       password,
     };
-    console.log(payload, "14");
+    // console.log(payload, "14");
     try {
-      let res = await fetch(`${base_URL}/user/login`, {
+      let res = await fetch(`${base_URL}user/login`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
@@ -22,7 +22,7 @@ const LogIn = () => {
         body: JSON.stringify(payload),
       });
       let data = await res.json();
-      console.log("data23:", data.msg);
+      // console.log("data23:", data.msg);
       if (res.ok) {
         localStorage.setItem("token", data.token);  
         localStorage.setItem("userId", data.userId); 
@@ -32,7 +32,7 @@ const LogIn = () => {
         alert(data.msg || "Login failed");
       }
     } catch (error) {
-      console.log(error, "error");
+      // console.log(error, "error");
       alert(error.msg);
     }
   };

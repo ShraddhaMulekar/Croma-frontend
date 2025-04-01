@@ -13,7 +13,7 @@ const BuyNow = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`${base_URL}/product/${productId}`);
+        const res = await fetch(`${base_URL}product/${productId}`);
         const data = await res.json();
         setProduct(data.product);
       } catch (error) {
@@ -30,7 +30,7 @@ const BuyNow = () => {
       const token = localStorage.getItem("token");
       const totalPrice = product.price * quantity;
 
-      const res = await fetch(`${base_URL}/order/buy`, {
+      const res = await fetch(`${base_URL}order/buy`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -40,7 +40,7 @@ const BuyNow = () => {
       });
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       if (data.msg === "Order placed successfully!..") {
         alert("Order Placed Successfully!");
         navigate("/orders");

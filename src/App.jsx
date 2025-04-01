@@ -1,9 +1,9 @@
 import './App.css'
 import react from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar.jsx';
 import Home from '../components/Home.jsx';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer.jsx';
 import LogIn from '../components/LogIn.jsx';
 import SignIn from '../components/SignIn.jsx';
 import AddToCart from '../components/AddToCart.jsx';
