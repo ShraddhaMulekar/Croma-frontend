@@ -1,11 +1,12 @@
 import { useState } from "react";
 import "./SignIn.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { base_URL } from "../config/base.url.js";
 
 const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
 
   const handleSignIn = async () => {
     let payload = {
@@ -27,6 +28,7 @@ const LogIn = () => {
         localStorage.setItem("token", data.token);  
         localStorage.setItem("userId", data.userId); 
         alert("Login successful!");
+        navigate("/")
         window.location.reload(); 
       } else {
         alert(data.msg || "Login failed");
