@@ -12,6 +12,7 @@ import ProductDetailPage from '../components/ProductDetailPage.jsx';
 import BuyNow from '../components/BuyNow.jsx';
 import Orders from '../components/Order.jsx';
 import FilterProduct from '../components/FilterProduct.jsx';
+import LogOut from '../components/LogOut.jsx';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/log_in' element={<LogIn />} />
+        <Route path='/log_out' element={<LogOut />} />
         <Route path='/sign_in' element={<SignIn />} />
         <Route path='/add_to_cart' element={<AddToCart />} />
         <Route path='/products' element={<ProductPage />} />

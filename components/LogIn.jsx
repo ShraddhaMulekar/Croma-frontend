@@ -28,8 +28,13 @@ const LogIn = () => {
         localStorage.setItem("token", data.token);  
         localStorage.setItem("userId", data.userId); 
         alert("Login successful!");
-        navigate("/")
+
+        // Redirect to the stored redirect path (if any), or home
+        const redirectTo = localStorage.getItem("redirectTo") || "/"
+        localStorage.removeItem("redirectTo")
+        navigate(redirectTo)
         window.location.reload(); 
+        
       } else {
         alert(data.msg || "Login failed");
       }

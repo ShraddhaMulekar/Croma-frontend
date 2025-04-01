@@ -62,7 +62,7 @@
   cursor: pointer;
 }
 .cart-login-location {
-  width: 20%;
+  width: 190%;
   /* border: solid; */
   display: flex;
   justify-content: space-evenly;
@@ -147,6 +147,16 @@
 .cart-inc-nav-link{
   text-decoration: none;
   color: white;
+}
+.cart_login_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+.logout_nav{
+  cursor: pointer;
+  font-size: 27px;
 }
 
 /* Responsive */

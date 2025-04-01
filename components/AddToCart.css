@@ -77,6 +77,19 @@
     text-decoration: none;
     color: white;
 }
+.logIn_check{
+    text-decoration: none;
+    color: white;
+}
+.logIn_check_btn{
+    width: auto;
+    background: none;
+    padding: 5px;
+}
+.logIn_check_para{
+    text-align: center;
+    padding: 20px;
+}
 
 /* Responsive */
 @media only screen and (max-width: 768px) {

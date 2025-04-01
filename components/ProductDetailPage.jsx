@@ -19,13 +19,18 @@ const ProductDetailPage = () => {
     }
   };
 
+  const redirectToLogIn = (action)=>{
+    localStorage.setItem("redirectTo", window.location.pathname) // Store the current page to redirect after login
+    navigate("/log_in") // Redirect to the login page
+  }
+
   //add to cart
   const addToCart = async () => {
     const token = localStorage.getItem("token");
     // console.log("Token in addToCart:", token);
 
     if (!token) {
-        alert("Please log in first!");
+        redirectToLogIn("addToCart");
         return;
     }
     try {
@@ -50,6 +55,16 @@ const ProductDetailPage = () => {
       console.error("Error adding to cart:", error);
     }
   };
+
+  //buy now logic
+  const handleBuyNow = ()=>{
+    const token = localStorage.getItem("token")
+    if(!token){
+      redirectToLogIn("buyNow")
+      return
+    }
+    navigate(`/buy/${product._id}`)
+  }
 
   useEffect(() => {
     fetchProductDetail();
@@ -86,7 +101,8 @@ const ProductDetailPage = () => {
           </div>
           <div className="product_detail_button">
             <button onClick={addToCart}>Add to Cart</button>
-            <button><Link className="buyNOw" to={`/buy/${product._id}`}>Buy Now!</Link></button>
+            <button onClick={handleBuyNow}>Buy Now!</button>
+            {/* <button><Link className="buyNOw" to={`/buy/${product._id}`}>Buy Now!</Link></button> */}
         </div>
         </div>
           </div>

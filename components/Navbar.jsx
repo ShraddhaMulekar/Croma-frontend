@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import { BsPerson } from "react-icons/bs";
+import { BsPerson, BsPersonFillSlash } from "react-icons/bs";
 import { IoIosMenu, IoIosSearch } from "react-icons/io";
 import { IoCartOutline, IoLocationOutline } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom";
@@ -94,10 +94,46 @@ const Navbar = () => {
   };
 
   // menu bar - category clicking
-  const handleCategoryClick =(category)=>{
-    navigate(`/products?category=${encodeURIComponent(category)}`)
-  }
+  const handleCategoryClick = (category) => {
+    navigate(`/products?category=${encodeURIComponent(category)}`);
+  };
 
+  //handle log out functionality
+  const handleLogOut = async () => {
+    let token = localStorage.getItem("token");
+
+    if (!token) {
+      alert("Please Log in now!");
+      navigate("/log_in");
+      return;
+    }
+
+    try {
+      let res = await fetch(`${base_URL}user/logout`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      const data = await res.json();
+      console.log("data", data);
+
+      if (res.ok) {
+        localStorage.removeItem("token");
+        localStorage.removeItem("userId");
+        alert("log out successful!..");
+        localStorage.removeItem("token");
+        navigate("/log_in");
+      } else {
+        alert(data.msg || "Error in Log out!");
+      }
+    } catch (error) {
+      console.log("error in log out!.. ", error);
+      alert("error in logging out! Please try again!..");
+    }
+  };
+
+  const isLoggin = !!localStorage.getItem("token");
   return (
     <div>
       <div className="navbar-container">
@@ -127,8 +163,12 @@ const Navbar = () => {
               <ul className="dropdown_ul">
                 {categories.map((category, index) => {
                   return (
-                    <li className="dropdown_li" key={index} onClick={()=>handleCategoryClick(category)}>
-                        {category}
+                    <li
+                      className="dropdown_li"
+                      key={index}
+                      onClick={() => handleCategoryClick(category)}
+                    >
+                      {category}
                     </li>
                   );
                 })}
@@ -171,22 +211,33 @@ const Navbar = () => {
         </div>
 
         {/* Cart & Login Section */}
-        <div className="cart-login-location">
-          <span className="location-nav">
-            <IoLocationOutline />
-          </span>
-          <Link to={"/sign_in"}>
-            <span className="login-nav">
-              <BsPerson />
-            </span>
-          </Link>
-          <div className="cart-inc-nav">
-            <Link className="cart-inc-nav-link" to={"/add_to_cart"}>
-              <span className="cart-nav">
-                <IoCartOutline />
+        <div className="cart_login_nav">
+          <div >
+            {isLoggin ? (
+              <span className="logout_nav" onClick={handleLogOut}>
+                <BsPersonFillSlash className="logout_nav" />
               </span>
-              <span className="inc-cart-nav">{cartcount}</span>
-            </Link>
+            ) : (
+              <Link to={"/sign_in"}>
+                <span className="login-nav">
+                  <BsPerson className="logout_nav" />
+                </span>
+              </Link>
+            )}
+          </div>
+          <div className="cart-login-location">
+            <span className="location-nav">
+              <IoLocationOutline />
+            </span>
+
+            <div className="cart-inc-nav">
+              <Link className="cart-inc-nav-link" to={"/add_to_cart"}>
+                <span className="cart-nav">
+                  <IoCartOutline />
+                </span>
+                <span className="inc-cart-nav">{cartcount}</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

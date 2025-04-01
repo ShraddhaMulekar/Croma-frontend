@@ -69,6 +69,8 @@ const AddToCart = () => {
       console.log("Error removing product from cart!", error);
     }
   };
+  // console.log(carts)
+  
 
   return (
     <div className="cart_wrapper">
@@ -76,7 +78,7 @@ const AddToCart = () => {
         <h2>Your Cart</h2>
         <div className="cart_content">
           {carts?.items?.length === 0 ? (
-            <p>No items in the cart</p>
+            <p>No items in the cart. </p>
           ) : (
             carts.items.map((item) => (
               <div key={item.productId._id} className="cart_item">
