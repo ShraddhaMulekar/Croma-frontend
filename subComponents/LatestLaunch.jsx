@@ -5,7 +5,7 @@ const LatestLaunch = () => {
   const [latests, setLatests] = useState([]);
 
   const fetchLatest = async () => {
-    const res = await fetch("public/HomePageData/LatestLaunch.json");
+    const res = await fetch("/HomePageData/LatestLaunch.json");
     const data = await res.json();
     // console.log("latest launch line 9", data);
     setLatests(data);
