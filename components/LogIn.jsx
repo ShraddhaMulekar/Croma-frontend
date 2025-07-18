@@ -23,8 +23,8 @@ const LogIn = () => {
         body: JSON.stringify(payload),
       });
       let data = await res.json();
-      // console.log("data23:", data.msg);
-      if (res.ok) {
+      console.log("data23:", res);
+      if (res.ok && res.status==200) {
         localStorage.setItem("token", data.token);  
         localStorage.setItem("userId", data.userId); 
         alert("Login successful!");
